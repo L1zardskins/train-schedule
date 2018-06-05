@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TimeSheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+
+    <!-- Firebase Reference -->
+
+</head>
+
+<body>
+    <div class="container">
+
+        <br>
+
+
+        <!-- Jumbotron Title -->
+        <div class="jumbotron">
+            <h1 class="text-center">Dude, Where's My Train?</h1>
+            <h3 class="text-center">Round the mountain she goes...... ¯\_(ツ)_/¯ </h3>
+            <img class="text-center" src="lovetrains.gif" alt="" id="train">
+            <p class="">TRAINS!!!!!</p>
+
+        </div>
+        <br>
+        <!-- <div class="row">
+            <div class="col-lg-12">
+                <div class="card card-default">
+                    <div class="card-body">
+                        <h3 class="text-center">
+                            <strong>Current Train Schedule</strong>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br> -->
+        <!-- Current Product -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card card-default">
+                    <div class="card-header text-white bg-dark">
+                        <h3 class="card-title text-center">TRAIN SCHEDULE!!!! I LOVE TRAINS!!!!!</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered table-striped table-hover" id='employee-table'>
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">Train Name</th>
+                                            <th scope="col">Destination</th>
+                                            <th scope="col">Frequency (min)</th>
+                                            <th scope="col">Next Arrival</th>
+                                            <th scope="col">Minutes Away</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-striped">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Make Your Bid -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card card-default">
+                    <div class="card-header text-white bg-dark">
+                        <h3 class="card-title">Add Train</h3>
+                        <img src="rage.jpg" alt="" id="train">
+                        <p>ERMAAAHHHGGGEERRRDDD!!!</p>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="train-name">Train Name</label>
+                                <input class="form-control" id="train-name" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="destination">Destination</label>
+                                <input class="form-control" id="destination" type="text">
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="first-train">First Train Time (HH:mm - Military Time)</label>
+                                <input class="form-control" id="first-train" type="text">
+                                <!-- <input class="form-control" id="datepicker" type="text"> -->
+                            </div>
+                            <div class="form-group row">
+                                <label for="frequency">Frequency (min)</label>
+                                <input class="form-control" id="frequency" type="text">
+                            </div>
+                            <button class="btn btn-danger" id="submit-train" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<script src="app.js"></script>
+
+
+</html>

@@ -1,0 +1,13 @@
+#train{
+    width: 100px;
+    height: 75px;
+}
+
+img{
+    border-radius: 40px;
+    display: inline-block
+}
+
+body{
+    background-image: url(background.jpg)
+}
